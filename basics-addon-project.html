@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics Add-on Project</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+
+      .dark-theme {
+        background-color: rgb(58, 58, 58);
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.6);
+        max-width: 1400px;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 20px;
+      }
+
+      .dark-h1 {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(58, 58, 58, 0.6);
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 20px;
+      }
+
+      .header {
+        background: url("https://www.candleco.com.au/assets/webshop/cms/18/218.png?1661909415");
+        background-size: cover;
+        padding: 100px;
+        background-repeat: no-repeat;
+        margin: -20px;
+      }
+
+      h3 {
+        text-align: center;
+        padding-top: 30px;
+        font-weight: bolder;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      p {
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .img1 {
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        border-radius: 20px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .img1:hover {
+        transform: scale(1.1);
+      }
+
+      .img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 20px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .img:hover {
+        transform: scale(1.1);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+      }
+
+      button {
+        border-radius: 10px;
+        border: none;
+        background-color: bisque;
+        display: block;
+        margin: 20px auto;
+        padding: 12px;
+      }
+
+      .dark-button {
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.4);
+        display: block;
+        margin: 20px auto;
+        padding: 12px;
+      }
+
+      footer {
+        text-align: center;
+        font-size: small;
+        margin-top: 30px;
+      }
+
+      .dark-footer {
+        text-align: center;
+        font-size: small;
+        margin-top: 30px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"><h1>Candle Making Hobby</h1></div>
+
+    <div class="container">
+      <h3>Early Origins</h3>
+      <p>
+        While the Egyptians were using wicked candles in 3,000 B.C., the ancient
+        Romans are generally credited with developing the wicked candle before
+        that time by dipping rolled papyrus repeatedly in melted tallow or
+        beeswax. The resulting candles were used to light their homes, to aid
+        travelers at night, and in religious ceremonies. Historians have found
+        evidence that many other early civilizations developed wicked candles
+        using waxes made from available plants and insects. Early Chinese
+        candles are said to have been molded in paper tubes, using rolled rice
+        paper for the wick, and wax from an indigenous insect that was combined
+        with seeds. In Japan, candles were made of wax extracted from tree nuts,
+        while in India, candle wax was made by boiling the fruit of the cinnamon
+        tree.
+      </p>
+      <img
+        class="img1"
+        src="https://upload.wikimedia.org/wikipedia/commons/4/42/COLLECTIE_TROPENMUSEUM_Kaarsengietmachine_TMnr_10014241.jpg"
+      />
+      <h3>Today's Candles</h3>
+      <p>
+        Candles have come a long way since their initial use. While they are no
+        longer used as a major source of light, they continue to grow in
+        popularity and use. Today, candles serve to symbolize a celebration,
+        ignite romance, soothe the senses, honor a ceremony, and accent home
+        decors — casting a warm and lovely glow for all to enjoy.
+        <br />
+        Read more
+        <a
+          href="https://candles.org/history/#:~:text=While%20the%20Egyptians%20were%20using,in%20melted%20tallow%20or%20beeswax."
+          >here</a
+        >.
+      </p>
+      <div class="grid">
+        <img
+          class="img"
+          src="https://cdn.shopify.com/s/files/1/0584/7066/2353/products/296286753_1105840273366948_4865223881954780155_n_540x.png?v=1659698572"
+        />
+        <img
+          class="img"
+          src="https://cdn.shopify.com/s/files/1/0584/7066/2353/products/IMG_4968copy_360x.jpg?v=1635681270"
+        />
+        <img
+          class="img"
+          src="https://cdn.shopify.com/s/files/1/0584/7066/2353/products/IMG_5101_900x.jpg?v=1643521293"
+        />
+        <img
+          class="img"
+          src="https://cdn.shopify.com/s/files/1/0584/7066/2353/products/IMG_5211_1080x.jpg?v=1650527117"
+        />
+      </div>
+      <button id="button">Change Theme</button>
+    </div>
+    <footer>Coded by <a href="https://github.com/axteria">Faye Wu</a></footer>
+  </body>
+
+  <script>
+    function changeTheme() {
+      let body = document.querySelector("body");
+      let header = document.querySelector("h1");
+      let footer = document.querySelector("footer");
+
+      if (body.classList.contains("dark-theme")) {
+        body.classList.remove("dark-theme");
+      } else {
+        body.classList.add("dark-theme");
+      }
+
+      if (button.classList.contains("dark-button")) {
+        button.classList.remove("dark-button");
+      } else {
+        button.classList.add("dark-button");
+      }
+
+      if (header.classList.contains("dark-h1")) {
+        header.classList.remove("dark-h1");
+      } else {
+        header.classList.add("dark-h1");
+      }
+
+      if (footer.classList.contains("dark-footer")) {
+        footer.classList.remove("dark-footer");
+      } else {
+        footer.classList.add("dark-footer");
+      }
+    }
+    let button = document.querySelector("button");
+    button.addEventListener("click", changeTheme);
+  </script>
+</html>
